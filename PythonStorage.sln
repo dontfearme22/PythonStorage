@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonStorage", "PythonStorage\PythonStorage.pyproj", "{BFE8C145-911F-488D-A904-0C5444ACB124}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFE8C145-911F-488D-A904-0C5444ACB124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE8C145-911F-488D-A904-0C5444ACB124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F14CA8C2-FD86-4811-A2BC-7802A9ED736F}
+	EndGlobalSection
+EndGlobal
