@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>PythonStorage</Name>
     <RootNamespace>PythonStorage</RootNamespace>
+    <InterpreterId>Global|VisualStudio|ProPython</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PythonStorage.py" />
+    <Compile Include="Question10.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Question5.py">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +36,15 @@
     <Compile Include="Question7.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Question8.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Question9.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|ProPython" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
