@@ -12,7 +12,8 @@
     <OutputPath>.</OutputPath>
     <Name>PythonStorage</Name>
     <RootNamespace>PythonStorage</RootNamespace>
-    <InterpreterId>Global|VisualStudio|ProPython</InterpreterId>
+    <InterpreterId>{d452f3b6-2ccc-41de-ab61-aa9a7d8dea32}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,8 +24,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PythonStorage.py" />
     <Compile Include="Question10.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Question12.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Question13.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Question5.py">
@@ -45,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|VisualStudio|ProPython" />
+    <InterpreterReference Include="{d452f3b6-2ccc-41de-ab61-aa9a7d8dea32}\3.5" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
