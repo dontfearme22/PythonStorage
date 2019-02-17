@@ -4,7 +4,7 @@ arcpy.env.workspace = r"C:\Users\ctchurch\Desktop\Exercise 3.gdb"
 arcpy.env.overwriteOutput = True
 varInField = r"C:\Users\ctchurch\Desktop\Exercise 3.gdb\CallsforService"
 
-#arcpy.AddField_management(varInField,"Crime_Explanation","TEXT")
+arcpy.AddField_management(varInField,"Crime_Explanation","TEXT")
 
 fieldsList = ["CFSType","Crime_Explanation"]
 
