@@ -12,9 +12,9 @@ tempLyr = "General_OffenseLayer_lyr"
 
 arcpy.MakeFeatureLayer_management(tempfc01,tempLyr)
 
-selecVar01 = "occ_dt > timestamp '2018-11-16 17:36:28'"
+selecVar01 = "occ_dt > timestamp '2018-11-16 17:36:28'" #There is a smarter way to do this, but im not that good yet. 
 selecVar02 = "locationTranslation = 'Residence/Home'"
 arcpy.SelectLayerByAttribute_management(tempLyr,"NEW_SELECTION",selecVar01)
 arcpy.SelectLayerByAttribute_management(tempLyr,"SUBSET_SELECTION",selecVar02)
 arcpy.MakeTableView_management(tempLyr,"tempTable")
-arcpy.TableToTable_conversion("tempTable",workPath,"General_Offense_Table01.csv")
+arcpy.TableToTable_conversion("tempTable",workPath,"General_Offense_Table01.csv") 
