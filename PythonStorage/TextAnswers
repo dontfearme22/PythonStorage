@@ -1,17 +1,18 @@
 1)	Explain in a few sentences the differences between properties and methods in Python.
 
 A method is a function inside of (belonging to) a class, 
-though not every usage of the term method refers to this specifically as such (the joys of programming).
-It is associated to an object that is instantiated from a class. Properties are a bit more arcane. 
-They can provide classes with attributes. 
-Basically, creating the parameters within which you will call your methods and objects for whatever code you are working on. 
-If a class is a blank paper form, an object a single copy of that form filled out, a property 
-might be whether that form requires a name or not. While methods perform tasks, properties define the characteristics 
-of the space those tasks will be performed in.  
+though not every usage of the term method in Python 
+refers to this specifically (the joys of programming).
+It is associated to an object that is instantiated from a class. 
+Properties are a bit more arcane.  They can provide classes with attributes.
+Basically, creating shared parameters for your class that extend to objects 
+instantiated from that class, (ex. Self.name). If a class is a blank paper form, 
+an object a single copy of that form filled out, a property might be a box for ‘name’.
+While methods perform tasks, properties define characteristics.  
 
 2)	Look at the following statements below and indicate if each one is a property or method and
 why.
-  a.	arcpy.env.overwriteOutput = True   | Property. overwriteOutput is a crudely speaking, a attribute inside of that class arcpy.env that can either be applied, or not applied, to your code – making it a property. 
+  a.	arcpy.env.overwriteOutput = True   | Property. overwriteOutput is a crudely speaking, a attribute inside of that class arcpy.env that holds a value that can be relevant to your code – making it a property. 
   b.	arcpy.SearchCursor(“roads”, “TYPE” <> 4’) | This can be identified as a method because it is associated with the arcpy class and has parameters.
   c.	row.setValue(‘distance’,100)  | This is likely a method because it is associated with the row class and has parameters. 
   d.	ArcGISProject.dateSaved | This is a property because there are no associated parameters.
@@ -27,10 +28,11 @@ def letterFunc (wordParam1, wordParam2):
     else:
       return False
       
-This function has two parameters (wordParam1 and wordParam2). They are strings. 
-If invoked the function examines the two input variables and will return a boolean value
-if the first string character equals the second (the .lower() function makes them lowercase 
-so they are the same case for accurate comparison). 
+This function has two parameters (wordParam1 and wordParam2). 
+They are strings. If invoked the function examines the two 
+input variables and will return (but not print) a Boolean value 
+if the first string character equals the second (the .lower() function 
+makes them both lowercase so they are the same case for accurate comparison). 
 
 4)	Write a function definition which satisfies the following requirements:
   a.	Accepts a list of names as a parameter
