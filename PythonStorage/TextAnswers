@@ -12,7 +12,7 @@ While methods perform tasks, properties define characteristics.
 
 2)	Look at the following statements below and indicate if each one is a property or method and
 why.
-  a.	arcpy.env.overwriteOutput = True   | Property. overwriteOutput is a crudely speaking, a attribute inside of that class arcpy.env that can either be applied, or not applied, to your code – making it a property. 
+  a.	arcpy.env.overwriteOutput = True   | Property. overwriteOutput is a crudely speaking, a attribute inside of that class arcpy.env that holds a value that can be relevant to your code – making it a property. 
   b.	arcpy.SearchCursor(“roads”, “TYPE” <> 4’) | This can be identified as a method because it is associated with the arcpy class and has parameters.
   c.	row.setValue(‘distance’,100)  | This is likely a method because it is associated with the row class and has parameters. 
   d.	ArcGISProject.dateSaved | This is a property because there are no associated parameters.
