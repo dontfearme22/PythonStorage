@@ -29,7 +29,7 @@ def letterFunc (wordParam1, wordParam2):
       return False
       
 This function has two parameters (wordParam1 and wordParam2). 
-They are strings. If invoked the function examines the two 
+They are strings (they can also be lists, or arrays). If invoked the function examines the two 
 input variables and will return (but not print) a Boolean value 
 if the first string character equals the second (the .lower() function 
 makes them both lowercase so they are the same case for accurate comparison). 
